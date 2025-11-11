@@ -22,4 +22,25 @@ if(canal == 1)
 
     whats.EnviarMensagem("87654321", video);
 }
+ case 2:
+        var telegram = new Telegram();
+        telegram.EnviarMensagem("99999999", messageBase);
+        telegram.EnviarMensagem("88888888", video);
+        break;
 
+    case 3:
+        var insta = new Instagram();
+        insta.EnviarMensagem("usuario_insta", messageBase);
+        insta.EnviarMensagem("usuario_insta", video);
+        break;
+
+    case 4:
+        var face = new Facebook();
+        face.EnviarMensagem("usuario_face", messageBase);
+        face.EnviarMensagem("usuario_face", video);
+        break;
+
+    default:
+        Console.WriteLine("Canal inválido");
+        break;
+}
